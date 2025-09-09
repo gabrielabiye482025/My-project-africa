@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Africa Section</title>
+  
+  <link href="normalize.css" rel="stylesheet">
+
+   <link href="https://fonts.goggleapis.com/css2?family=Days+Ones&family=Work+Sans&display=swap" rel="stylesheet">
+
+  <style>
+   
+   
+   body
+   {
+     background-color: #2a5298;
+	 font-family: "Work Sans", sans serif;
+   }
+   
+  
+   nav
+   {
+     display: flex;
+     background-color:#2f1859;
+     justify-content: center;
+     position: fixed;
+     width: 100%;
+     z-index: 2;
+   }
+   
+   nav ul
+   {
+     display: flex;
+     align-items: center;
+     padding: 0 10%;
+     list-style: none;
+   }
+
+   nav ul li a
+   {
+     font-size: 16px;
+     padding: 0 15px;
+     color: white;
+     transition: 0.2s;
+     text-transform: uppercase;
+   }
+   
+   nav ul li a:hover
+   {
+     transition: 0.2s;
+     color: #52c5ff;
+   }
+   
+   .container
+   {
+     position: relative;
+	 width: 100%;
+	 max-width: 1200px;
+	 margin: 0 auto;
+	 padding: 0 15px;
+   }
+   
+   .africa
+   {
+     padding-top: 130px;
+   }
+   
+   .africa img
+   {
+     border-style: none;
+	 border-radius: 50%;
+	 margin: 0 auto;
+	 max-width: 440px;
+	 display: block;
+   }
+   
+   h1
+   {
+     color: black;
+	 text-align: center;
+	 font-size: 24px;
+	 margin: 30px 0px 100px;
+   }
+   
+   #about africa
+   {
+     scroll-margin-top: 90px;
+   }
+   
+   .aboutafrica
+   {
+     width: 100%;
+	 max-width: 500px;
+	 height: auto;
+	 background-color: white;
+	 text-align: center;
+	 padding: 40px 50px 70px;
+	 margin: 0 auto;
+	 box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.4), 
+	 -10px -10px 0px rgba(255, 114, 114, 0.8);
+   }
+   
+   .aboutafrica-section
+   {
+     padding: 5px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-wrap: wrap; 
+   }
+   
+   .aboutafrica-image
+   {
+     height: 600px;
+	 width: 565px;
+	 background-image: url("africamap.png");
+	 background-size: cover;
+	 background-position: center;
+   }
+   
+   #Project
+   {
+      padding: 5px;
+	  margin: 5%;
+	  width: 100%;
+	  height: auto;
+	  text-align: center;
+   }
+   
+   .project-name
+   {
+      display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  flex-wrap: wrap;
+   }
+   
+   .project
+   {
+      color: white;
+   }
+    
+   .africa-project
+   {
+      width: 600px;
+	  height: 400px;
+	  background: white; 
+	  position: relative;
+	  border-radius:10px; 
+	  background-image: url("imageafrica.png");
+	  image-align: center;
+	  margin: 20px;
+	  background-size: cover;
+	  background-position: center;
+   }
+
+   .countries-project
+   {
+      width: 600px;
+	  height: 400px;
+	  background: white; 
+	  position: relative;
+	  border-radius:10px; 
+	  background-image: url("africacountries.png");
+	  image-align: center;
+	  margin: 20px;
+	  background-size: cover;
+	  background-position: center;
+   }   
+   
+   .text
+   {
+      position: absolute;
+	  height: 25px;
+	  width: 93.5%;
+	  left: 0;
+	  bottom: 0;
+	  z-index: 1;
+	  background-color: white;
+	  overflow: hidden;
+	  transition: 0.2s ease;
+	  padding: 20px;
+   }
+   
+   .text:hover
+   {
+     height: 175px;
+     transition: 0.3s;
+   }
+   
+   .text h3
+   {
+      margin-top: 3px
+   }
+   
+   .content
+   {
+      color: black;
+   }
+   
+   .button
+   {
+      border: 5px solid lightblue;
+      border-radius: 10px
+      width: 168px;
+ 	  margin-bottom: 100px
+	  margin-left: 10px
+   }
+   
+   .Contact
+   {
+      width: 100%;
+	  height: auto;
+	  padding: 75px 0 50px 0;
+	  text-align: center;
+	  background-color: rgba(3, 3, 3, 45%);
+   }
+   
+   .Contact
+   {
+      margin-bottom50px;
+   }
+   
+   .contact h2, .contact p
+   {
+      color: white;
+   }
+   
+   .contact-form {
+   display: flex;
+   text-align: left;
+   max-width: 1200px;
+   margin: 0 auto;
+   color: white;
+}
+
+   
+   .contact-form lable
+   {
+      display: block;
+	  flex-direction: column
+	  width: 60%;
+   }
+   
+    .message
+	{
+	   display: flex;
+	   flex-direction: column;
+	   width: 60%;
+	}
+	
+	.message textarea
+	{
+	border-radius: 5px;
+	border: 0px;
+	}
+	
+	.contact-details
+	{
+	    flex: 1;
+		margin-right: 5px;
+	}
+	
+	.contact-details input
+	{
+	   width: 100px;
+	   border-radius: 5px;
+	   border: 0px;
+	   padding: 15px 20px;
+	   margin-bottom: 20px;
+	}
+	
+	.message button
+	{
+	   color: #1d3d5f;
+	   border: 0;
+	   border-radius: 5px;
+	   background: lightblue;
+	   width: 140px;
+	   height: 40px;
+	   margin-top: 40px;
+       margin-left: auto;
+       text-transform: uppercase;
+       font-weight: bold;
+	   cursor: pointer;
+	   transition: 0.3s;
+	}
+	
+	.message button:hover
+	{
+	   background: black;
+	   color: white;
+	   transition: 0.2s;
+	}
+	
+	.footer
+	{
+	   height: 98px;
+	   background-color: #1f2027;
+	}
+	
+	.footer .container
+	{
+	   display: flex;
+	   align-items: center;
+	   height: 100%;
+	}
+	
+	.social-media
+	{
+	   font-size:m200%;
+	   width: auto;
+	   margin-left: auto;
+	}
+	
+	.social-media a i
+	{
+	   color: white;
+	   transition: 0.2s;
+	}
+	
+	.social-media i:hover
+	{
+	   color: lightblue;
+	   transition: 0.2s;
+	}
+	
+	.copyright
+	{
+	   color: white;
+	}
+   
+  </style>
+</head>
+
+<body>
+    
+  <nav>
+    <ul>
+      <li><a href="#aboutafrica">About Africa</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contactme">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+  <section class="africa">
+      <div class="container">
+         <img src="africacontinent.png" style="width: 900px"; alt="Africa Continent">
+         <h1>Hi! This is the Africa continent</h1>		 
+      </div>
+  </section>
+
+  <section id="aboutafrica" class="aboutafrica">
+       <h2>About Africa</h2>
+	   <div class="aboutafrica-section">
+	        <div class="img">
+			    <div class="aboutafrica-image"></div>
+			</div>
+			
+			<div class="aboutafrica-information">
+			
+			<p>Africa is the world's second-largest continent by both area and population,
+			known as the "mother continent" due to its history as the cradle of humankind.
+			It has 54 countries, features diverse climates and terrains including deserts,
+			rainforests, and savannas, and is surrounded by the Mediterranean Sea,
+			Red Sea,Indian Ocean, and Atlantic Ocean.
+			Key features include the Nile River, the Sahara Desert, and Mount Kilimanjaro.</p> 
+            
+			<p>Africa is an incredibly resource-rich continent, holding a large share of 
+			the world's natural resources, including significant mineral reserves like 
+			gold, diamonds, cobalt, and platinum, as well as oil, natural gas,
+			arable land, and water. While these resources are vital for global industry 
+			and the continent's potential economic development,
+			challenges remain in ensuring their sustainable use 
+			and ensuring local communities fully benefit from their extraction.</p>
+			
+			</div>
+		</div>
+   </section>	
+        
+   <section id="projects">
+        <div class="projects" style="text-align: center; color: white;">
+		    <h2>Projects</h2>
+		</div>	
+			<div class="projects">
+			
+			    <div class="africa-project">
+				   <div class="text">
+				       <h3 class="project-name">Africa Resourses</h3>
+                       <div class="content">
+                         <p>An HTML project about some facts about the Africa's resourses.</p>
+                       </div>
+					   
+                       <a class="button" href="https://www.aljazeera.com/news/2018/2/20/mapping-africas-natural-resources" target="_blank" rel="noopener noreferrer">View Project</a>
+					</div>   
+					
+                 </div>					
+		       
+		      </div>
+                  <div class="countries-project">
+				   <div class="text">
+				       <h3 class="project-name">African countries</h3>
+                       <div class="content">
+                         <p>This project is for African Countries website from the Web Dev 2.0 Course.</p>
+                       </div>
+					   
+                       <a class="button" href="https://www.shutterstock.com/search/african-countries-flags" target="_blank">View Project</a>
+					</div>
+					
+                 </div>	
+    </section>
+
+    <section id="class="contactme">
+	   
+	   <h2>contact</h2>
+	   <p>Use this form to get in touch. I would love to hear from you!</p>
+
+       <form class="contact-from">
+
+    </section>
+
+    <section id="contactme" class:"contact">
+	    <h2>Contact</h2>
+		<p>Use this form to get in touch. I would like to hear from you!</p>
+		
+		<form classs="contact-from">
+		
+		    <div class="contact-details">
+			
+			    <lable for="name">Name</lable>
+				<input type="text" id="yourname" placeholder="Yourname">
+				
+			    <lable for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Reason for your message">
+
+                <lable for="email">Email Address</lable>
+                <input type="email" id="email" placeholder="Your email address">
+
+             </div>
+      
+             <div class="message">	  
+                 
+				  <lable for="msg">Message</lable>
+				  <textarea id="msg" row="15"></textarea>
+				  <button type="submit">Submit</button>
+				  
+		    </div>
+
+         </form>			 
+    </section>
+	
+	<footer>
+	    <div class="container">
+		    <div class="copyright">
+			This site &copy: 2025 Riel Creative
+			</div>
+	    </div>
+		
+     </footer>		
+	  	
+</body>
+</html>
